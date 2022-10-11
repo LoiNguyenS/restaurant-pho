@@ -6,18 +6,19 @@ import {
 } from "react-router-dom";
 
 import './App.css';
-import Header from './components/Header'
-import Notes from './pages/HomePage'
-import Note from './pages/Note'
+import NavBar from './components/NavBar'
+import HomePage from './pages/HomePage'
+import Menu from './pages/Menu'
 
 
 function App() {
   return (
-    <NavBar />
-    <div classname="container">
+
+    <div classname="container1">
+
       <Router>
         <Routes>
-          <Route path="/home" element={<HomePage />} />
+          <Route exact path="/" element={<HomePage />} />
           <Route path="/menu" element={<Menu/>} />
         </Routes>
       </Router>      
