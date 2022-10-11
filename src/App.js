@@ -15,8 +15,11 @@ function App() {
   return (
 
     <div classname="container1">
-
+      <div>
+        
+      </div>
       <Router>
+        <NavBar />
         <Routes>
           <Route exact path="/" element={<HomePage />} />
           <Route path="/menu" element={<Menu/>} />
